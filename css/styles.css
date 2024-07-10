@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: "Inter", Arial, Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   color: var(--color-body);
   font-size: 2.4rem;
@@ -91,5 +91,43 @@ a {
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/* Badges */
+/* OOP CSS principles suggest to seperate structure from skin  */
+/* This is the structure: */
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+/* This is the skin */
+/* we will use the BEM naming convention, i.e., 
+Block-Element-Modifier*/
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+/* for screens wider than 1024px: */
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
