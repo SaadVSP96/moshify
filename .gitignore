@@ -1,1 +1,4 @@
 Moshify_Assets/
+node_modules
+dist/
+.cache/
